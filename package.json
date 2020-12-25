@@ -1,0 +1,45 @@
+{
+  "name": "aboutnumber",
+  "version": "1.0.0",
+  "description": "aboutnumber.js: interesting math facts about numbers",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/ tests/ --fix",
+    "cover": "jest --silent --coverage",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deliaz/aboutnumber.js.git"
+  },
+  "author": "Deliaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Deliaz/aboutnumber.js/issues"
+  },
+  "homepage": "https://github.com/Deliaz/aboutnumber.js#readme",
+  "private": false,
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "2.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "fast-levenshtein": "^3.0.0",
+    "humanize-duration": "^3.23.1",
+    "is-palindrome": "^0.3.0",
+    "morsify": "^2.3.1",
+    "n2words": "^1.7.1",
+    "pretty-bytes": "^5.3.0",
+    "rgba-convert": "^0.3.0",
+    "roman-numeral": "^0.2.6"
+  }
+}

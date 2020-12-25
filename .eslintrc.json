@@ -1,0 +1,58 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "prettier/prettier",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "plugins": [
+    "jest",
+    "import",
+    "prettier"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      "tab"
+    ],
+    "linebreak-style": 0,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-mixed-spaces-and-tabs": [
+      "error",
+      "smart-tabs"
+    ],
+    "no-console": "off",
+    "no-var": "error",
+    "no-cond-assign": "off",
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "curly": "error",
+    "max-lines": [1, 450],
+    "import/order": ["error"],
+    "import/no-unresolved": "off",
+    "prettier/prettier": "error"
+  },
+  "globals": {
+  }
+}
