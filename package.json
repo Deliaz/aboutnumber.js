@@ -1,6 +1,6 @@
 {
   "name": "aboutnumber",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "aboutnumber.js: interesting math facts about numbers",
   "main": "dist/aboutnumber.js",
   "scripts": {
