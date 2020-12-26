@@ -1,4 +1,4 @@
-import {getNumberInfo, getNumberPairInfo} from '../src/index';
+import {getNumberPairInfo} from '../src/index';
 import {MAX_NUMBER_PAIR, MIN_NUMBER_PAIR} from '../src/const';
 
 test('Error for bigger than max number', () => {
