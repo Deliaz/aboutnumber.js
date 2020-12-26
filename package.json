@@ -19,6 +19,7 @@
     "url": "https://github.com/Deliaz/aboutnumber.js/issues"
   },
   "homepage": "https://github.com/Deliaz/aboutnumber.js#readme",
+  "keywords": ["number", "math", "about number", "math facts"],
   "private": false,
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
