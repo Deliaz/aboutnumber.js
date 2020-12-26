@@ -1,0 +1,11 @@
+coverage/*
+functions/*
+src/*
+tests/*
+
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.prettierrc.js
+webpack.config.js
