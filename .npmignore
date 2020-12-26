@@ -3,6 +3,7 @@ functions/*
 src/*
 tests/*
 .github/*
+.idea/*
 
 .babelrc
 .editorconfig
