@@ -8,7 +8,7 @@ import prettyBytes from 'pretty-bytes';
 import n2words from 'n2words';
 import humanizeDuration from 'humanize-duration';
 import rgba from 'rgba-convert';
-import { Base64 } from 'js-base64';
+import {Base64} from 'js-base64';
 import {PRECISION} from '../const';
 
 export function number(n) {
@@ -258,7 +258,7 @@ export function hashes(n) {
 
 export function base64(n) {
 	return {
-		base64: Base64.encode(n.toString())
+		base64: Base64.encode(n.toString()),
 	};
 }
 
