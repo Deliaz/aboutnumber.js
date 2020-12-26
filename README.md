@@ -3,6 +3,14 @@ Interesting math facts about numbers
 
 ## Usage:
 
+```
+npm i aboutnumber
+```
+
+```
+yarn add aboutnumber
+```
+
 For a single number
 ```js
 const result = aboutnumber(101);
