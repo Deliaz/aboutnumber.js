@@ -1,9 +1,29 @@
 # aboutnumber.js
 Interesting math facts about numbers
 
-## Docs:
+## Usage:
 
-### getNumberInfo
+For a single number
+```js
+const result = aboutnumber(101);
+```
+
+For a pair of numbers
+```js
+const result = aboutnumber(200, 350);
+```
+
+### Locales support
+The single-number mode supports `locale` parameter being passed in options object.
+It affects result fields like `duration*` and `toWords`
+```js
+aboutnumber(103, {locale: 'de'});
+```
+
+* `locale` (default 'en'): supported ['ar', 'nl', 'en', 'fr', 'de', 'he', 'it', 'ko', 'lv', 'lt', 'no', 'pl', 'pt', 'ru', 'es', 'tr', 'uk']
+
+
+### Single number
 
 ```js
 {
@@ -67,5 +87,26 @@ Interesting math facts about numbers
     "rgbaCss": String, // CSS string with rgba color
     "rgbaHex": String, // HEX color representation
   }
+}
+```
+
+### A number pair
+```js
+{
+	commonDigits: Array<Number>, // Common digits
+    commonDivisors: Array<Number>, // Common dividors
+    isCoprime: Boolean, // True when numbers are coprime integers
+    difference: Number, // math difference
+    divRemainder: Number, // Remainder
+    division: Number, // Division result
+    gcd: Number, // Greatest common divisor
+    hypotenuse: Number, // Hypotenuse value
+    isTwinPrime: Number, // True when numbers are twin prime
+    lcm: Number, // Least common multiple
+    levenshteinDistance: Number, // Levenshtein distance
+    multiplication: Number, // Multiplcation value
+    geometricMean: Number, // Geometric mean
+    sum: Number, // Math sum
+    arithmeticMean: Number, // Arithmetic mean
 }
 ```
