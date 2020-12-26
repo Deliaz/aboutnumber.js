@@ -2,7 +2,7 @@
   "name": "aboutnumber",
   "version": "1.0.0",
   "description": "aboutnumber.js: interesting math facts about numbers",
-  "main": "src/index.js",
+  "main": "dist/aboutnumber.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint src/ tests/ --fix",
@@ -37,6 +37,7 @@
     "fast-levenshtein": "^3.0.0",
     "humanize-duration": "^3.25.0",
     "is-palindrome": "^0.3.0",
+    "js-base64": "^3.6.0",
     "md5": "^2.3.0",
     "morsify": "^2.3.1",
     "n2words": "^1.9.0",

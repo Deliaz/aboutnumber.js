@@ -1,34 +1,34 @@
-import {getNumberInfo} from '../src/index';
+import aboutnumber from '../src/index';
 import {MAX_NUMBER, MIN_NUMBER} from '../src/const';
 
 test('Error for bigger than max number', () => {
 	expect(() => {
-		getNumberInfo(MAX_NUMBER + 1);
+		aboutnumber(MAX_NUMBER + 1);
 	}).toThrow();
 });
 
 test('Error for smaller than min number', () => {
 	expect(() => {
-		getNumberInfo(MIN_NUMBER - 1);
+		aboutnumber(MIN_NUMBER - 1);
 	}).toThrow();
 });
 
 test('Error for float number', () => {
 	expect(() => {
-		getNumberInfo(1.01);
+		aboutnumber(1.01);
 	}).toThrow();
 });
 
 test('Error for NaN', () => {
 	expect(() => {
-		getNumberInfo(NaN);
+		aboutnumber(NaN);
 	}).toThrow();
 });
 
 test('No error for correct integer', () => {
 	expect(() => {
-		getNumberInfo(10);
+		aboutnumber(10);
 	}).not.toThrow();
 
-	expect(getNumberInfo(10).number).toEqual(10);
+	expect(aboutnumber(10).number).toEqual(10);
 });
