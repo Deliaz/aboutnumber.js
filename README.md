@@ -1,5 +1,7 @@
 # aboutnumber.js
-Interesting math facts about numbers
+![Node.js CI](https://github.com/Deliaz/aboutnumber.js/workflows/Node.js%20CI/badge.svg?branch=main)
+
+Node.js library which provides interesting math facts about numbers
 
 ## Usage:
 
