@@ -1,5 +1,6 @@
 /* eslint-env node */
-import crypto from 'crypto';
+import md5 from 'crypto-js/md5';
+import sha1 from 'crypto-js/sha1';
 import {convert as romanNumerals} from 'roman-numeral';
 import morsify from 'morsify';
 import isPalindrome from 'is-palindrome';
@@ -248,13 +249,9 @@ export function unixDate(n) {
 }
 
 export function hashes(n) {
-	const md5 = crypto.createHash('md5').update(n.toString()).digest('hex');
-
-	const sha1 = crypto.createHash('sha1').update(n.toString()).digest('hex');
-
 	return {
-		md5,
-		sha1,
+		md5: md5(n.toString()).toString(),
+		sha1: sha1(n.toString()).toString(),
 	};
 }
 

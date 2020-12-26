@@ -33,6 +33,7 @@
     "jest": "^26.4.2"
   },
   "dependencies": {
+    "crypto-js": "^4.0.0",
     "fast-levenshtein": "^3.0.0",
     "humanize-duration": "^3.23.1",
     "is-palindrome": "^0.3.0",
