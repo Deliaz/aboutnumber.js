@@ -1,6 +1,6 @@
 /* eslint-env node */
-import md5 from 'crypto-js/md5';
-import sha1 from 'crypto-js/sha1';
+import md5 from 'md5';
+import sha1 from 'sha1';
 import {convert as romanNumerals} from 'roman-numeral';
 import morsify from 'morsify';
 import isPalindrome from 'is-palindrome';
