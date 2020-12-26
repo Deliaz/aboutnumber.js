@@ -2,6 +2,7 @@ coverage/*
 functions/*
 src/*
 tests/*
+.github/*
 
 .babelrc
 .editorconfig
