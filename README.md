@@ -23,8 +23,8 @@ aboutnumber(103, {locale: 'de'});
 * `locale` (default 'en'): supported ['ar', 'nl', 'en', 'fr', 'de', 'he', 'it', 'ko', 'lv', 'lt', 'no', 'pl', 'pt', 'ru', 'es', 'tr', 'uk']
 
 
-### Single number
-
+### Single number result
+Accepted range: from 0 to 999999999999999
 ```js
 {
     number: Number, // Originally passed number
@@ -86,7 +86,8 @@ aboutnumber(103, {locale: 'de'});
 }
 ```
 
-### A number pair
+### A pair of number result
+Accepted range: from 1 to 9999999
 ```js
 {
     commonDigits: Array<Number>, // Common digits
