@@ -30,7 +30,7 @@ Accepted range: from 0 to 999999999999999
     number: Number, // Originally passed number
     numeralSum: Number, // Sum of numerals
     numeralMultiplication: Number, // Multiplication of numerals
-    numeralMultiplicationWoZeroes: Number // Multiplication of numerals excluding zeroes
+    numeralMultiplicationWoZeroes: Number, // Multiplication of numerals excluding zeroes
     dividers: Array<Number>, // List of all dividers
     dividersCount: Number, // Dividers count
     dividersSum: Number, // Sum of dividers
@@ -65,7 +65,7 @@ Accepted range: from 0 to 999999999999999
     md5: String, // MD5 hash of the number
     sha1: String, // SHA1 hash of the number
     base64: String, // Base64 representation
-    maxDividerBase2: Number // Maximum divider from power of two sequence [2,4,8,16,32,128, ...]
+    maxDividerBase2: Number, // Maximum divider from power of two sequence [2,4,8,16,32,128, ...]
     possibleNumeralSystem: Number, // Maximum possible numeral base
     possibleNumeralSystemName: String, // Name of the possible numeral base
     fromBinaryToDecimal: String, // Decimal representation, if the number looks like binary
