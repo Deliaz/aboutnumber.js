@@ -1,5 +1,7 @@
 # aboutnumber.js
-Interesting math facts about numbers
+![Node.js CI](https://github.com/Deliaz/aboutnumber.js/workflows/Node.js%20CI/badge.svg?branch=main)
+
+Node.js library which provides interesting math facts about numbers
 
 ## Usage:
 
@@ -88,7 +90,7 @@ Accepted range: from 0 to 999999999999999
     fromBytes: String, // Human-readable file size, assuming the number are bytes
     fromKilobytes: String, // Human-readable file size, assuming the number are kilobytes
     toWords: String, // Words representation of the number, supports locales
-    rgba: Array<Number>, // Array with RGBA components: [r, b, b, a]
+    rgba: Array<Number>, // Array with RGBA components: [r, g, b, a]
     rgbaCss: String, // CSS string with rgba color
     rgbaHex: String, // HEX color representation
 }
@@ -99,7 +101,7 @@ Accepted range: from 1 to 9999999
 ```js
 {
     commonDigits: Array<Number>, // Common digits
-    commonDivisors: Array<Number>, // Common dividors
+    commonDivisors: Array<Number>, // Common dividers
     isCoprime: Boolean, // True when numbers are coprime integers
     difference: Number, // math difference
     divRemainder: Number, // Remainder

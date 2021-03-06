@@ -1,6 +1,6 @@
 {
   "name": "aboutnumber",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "aboutnumber.js: interesting math facts about numbers",
   "main": "dist/aboutnumber.js",
   "scripts": {
@@ -19,6 +19,12 @@
     "url": "https://github.com/Deliaz/aboutnumber.js/issues"
   },
   "homepage": "https://github.com/Deliaz/aboutnumber.js#readme",
+  "keywords": [
+    "number",
+    "math",
+    "about number",
+    "math facts"
+  ],
   "private": false,
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
