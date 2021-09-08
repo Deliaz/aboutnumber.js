@@ -56,6 +56,7 @@ test('isPrime', () => {
 	expect(methods.allDividers(100001).isPrime).toEqual(false);
 	expect(methods.allDividers(53).isPrime).toEqual(true);
 	expect(methods.allDividers(101).isPrime).toEqual(true);
+	expect(methods.allDividers(42243669067).isPrime).toEqual(true);
 	expect(methods.allDividers(199).isPrime).toEqual(true);
 	expect(methods.allDividers(0).isPrime).toEqual(false);
 });
@@ -66,6 +67,18 @@ test('primeFactorization', () => {
 	expect(methods.primeFactorization(126).primeFactorization).toEqual([2, 3, 3, 7]);
 	expect(methods.primeFactorization(11100).primeFactorization).toEqual([2, 2, 3, 5, 5, 37]);
 	expect(methods.primeFactorization(0).primeFactorization).toEqual([]);
+	// Prim Number
+	expect(methods.primeFactorization(42243669067)).toEqual({
+		isSemiPrime: false,
+		primeFactorization: [42243669067],
+	});
+	// Build numbers back
+	expect(
+		methods.primeFactorization(11100).primeFactorization.reduce((mem, i) => mem * i, 1)
+	).toEqual(11100);
+	expect(
+		methods.primeFactorization(40239166629).primeFactorization.reduce((mem, i) => mem * i, 1)
+	).toEqual(40239166629);
 });
 test('isSemiPrime', () => {
 	expect(methods.primeFactorization(1).isSemiPrime).toEqual(false);

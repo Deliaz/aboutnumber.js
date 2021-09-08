@@ -118,13 +118,17 @@ export function primeFactorization(n) {
 	const factors = [];
 	let divisor = 2;
 
-	while (n >= 2) {
-		if (n % divisor === 0) {
+	let i = n;
+	while (divisor * divisor <= i) {
+		if (i % divisor === 0) {
 			factors.push(divisor);
-			n = n / divisor;
+			i = i / divisor;
 		} else {
 			divisor++;
 		}
+	}
+	if (i > 1) {
+		factors.push(i);
 	}
 
 	return {
